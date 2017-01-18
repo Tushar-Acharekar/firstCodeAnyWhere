@@ -1,0 +1,27 @@
+
+body{
+background-color:#CFD8DC;
+}
+
+body *,body{
+font-family: 'Varela Round', sans-serif;
+}
+
+.container-fluid{
+margin:0px;
+padding:0px;
+}
+
+.mainBody{
+background-color:;
+margin-top: 50px;
+}
+
+.leftPanel{
+height:100vh;
+background-color:#90A4AE;
+color:yellow;
+padding-right:0px;
+}
+
+
