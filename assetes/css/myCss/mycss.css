@@ -21,6 +21,46 @@ background-color:#90A4AE;
 color:yellow;
 }
 
+.navbar-default{
+background-color:#37474F;
+}
+
+
+/* =====================================================overide bootsrap========================================================================== */
+.navbar-default .navbar-nav>li>a{
+padding: 0px;
+}
+
+.navbar-default .navbar-nav>li>a button{
+    color: #EEEEEE;
+    padding: 0px 15px;
+    height: 50px;
+    width: 100%;
+}
+
+.navbar-default .navbar-brand {
+    color: #EEEEEE;
+}
+
+.navbar-fixed-top a:hover{
+    color: #4DD0E1 !important;
+}
+
+.navbar-fixed-top-click{
+color:#4DD0E1  !important;
+}
+
+.navbar-nav {
+    margin: 0px -15px;
+}
+/* ================================================================================================================================================ */
+
+/* =====================================================overide material design========================================================================== */
+.mdl-button{
+
+}
+
+/* ================================================================================================================================================ */
 
 
 
