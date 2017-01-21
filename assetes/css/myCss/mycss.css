@@ -1,41 +1,85 @@
 
-body{
-background-color:#CFD8DC;
+@media only screen and (max-width : 767px){     
+	.connect_leftMenuMob{
+		left: -75%;
+		top:0px;
+		width:75%;
+	}
+	
+	.hideMobile{display:none !important;}
 }
 
-body *,body{
-font-family: 'Varela Round', sans-serif;
+
+html { overflow-y: scroll; }
+
+body{background-color:#CFD8DC;position: relative; }
+
+body *,body{font-family: 'Varela Round', sans-serif;}
+
+.container-fluid{margin:0px;padding:0px;}
+
+.mainBody{background-color:gray;}
+
+li>a{padding: 0px !important;}
+
+a{padding: 0px !important;}
+
+.material-icons{font-size:18px;}
+
+.menuToggle .hideMobile{
+width:100%;	
 }
 
-.container-fluid{
-margin:0px;
-padding:0px;
+.menuToggle{
+padding-right: 0px;
 }
 
-.mainBody{
-background-color:gray;
+.profile{
+padding:15px;
+margin:0px auto;
+display:flex;
+justify-content:flex-start;
 }
+
+.connect_leftMenuMob{
+	position: fixed !important;
+	min-height:100vh;
+	height:auto;
+	z-index:10000 !important;
+}
+
+
+
+/* =====================================================set left panel style========================================================================== */
 
 .leftPanel{
-background-color:#90A4AE;
-color:yellow;
+padding:0px;
+background-color:#455A64;
 }
 
-.navbar-default{
-background-color:#37474F;
+.rightPanel{
+background-color:#E0E0E0;
 }
+
+.leftPanel li a{
+color:#ECEFF1;
+}
+
+.leftPanel li a:hover{
+color:#546E7A;
+background-color:#9E9E9E;
+}
+
+/* ================================================================================================================================================ */
+
+
+
 
 
 /* =====================================================overide bootsrap========================================================================== */
-.navbar-default .navbar-nav>li>a{
-padding: 0px;
-}
-
-.navbar-default .navbar-nav>li>a button{
-    color: #EEEEEE;
-    padding: 0px 15px;
-    height: 50px;
-    width: 100%;
+.navbar-default{
+background-color:#37474F;
+border-width: 0px;
 }
 
 .navbar-default .navbar-brand {
@@ -46,21 +90,48 @@ padding: 0px;
     color: #4DD0E1 !important;
 }
 
-.navbar-fixed-top-click{
-color:#4DD0E1  !important;
-}
-
 .navbar-nav {
-    margin: 0px -15px;
+    margin: 0px 0px;
 }
+
+#myNavbar li ,#myNavbar ul {
+    display: inline-block;
+}
+
+#myNavbar .navbar-right span{
+	display:none;
+	padding:0px 5px;
+}
+
+.navbar-fixed-top #myNavbar .navbar-right{
+float: right;
+}
+
+
+
 /* ================================================================================================================================================ */
 
-/* =====================================================overide material design========================================================================== */
+
+
+
+
+/* ================================================overide material design======================================================================== */
 .mdl-button{
+    color: #EEEEEE;
+    padding: 0px 15px;
+    height: 50px;
+    width: 100%;
+	min-width: auto;
+	text-align: -webkit-left;
+    text-transform: capitalize;
+}
 
+.mdl-button i{
+padding-bottom:5px;
 }
 
 /* ================================================================================================================================================ */
+
 
 
 
@@ -70,7 +141,9 @@ color:#4DD0E1  !important;
 		min-height:100vh;
 	}
 	
-	.rightPanel, .leftPanel{
-		margin-top: 50px;
+	#myNavbar .navbar-right span{
+		display:inline-block;
 	}
+	
+	.hideDesktop{display:none !important;}
 }
