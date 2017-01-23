@@ -9,65 +9,114 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   <link rel="stylesheet" href="assetes/css/myCss/mycss.css">
-  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   <script defer src="assetes/js/overideDefault.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+  
+<!--   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.2.0/css/mdb.min.css">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.2.0/js/mdb.min.js"></script> -->
+
 </head>
-<body>
- 	  <!-- ========================================Top navigation====================================================== -->
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="50">
+<!-- ========================================Top navigation====================================================== -->
 	  <nav class="navbar navbar-default navbar-fixed-top">
-		  <div class="container">
-			<div class="navbar-header">
-			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>                        
-			  </button>
-			  <a class="navbar-brand" href="#myPage">Web Development</a>
-			</div>
-			<div class="collapse navbar-collapse" id="myNavbar">
+		  <div class="container-fluid">
+			<div id="myNavbar">
+			  <ul class="nav navbar-nav navbar-left menuToggle col-sm-3 col-md-3 col-lg-2">
+				<li class="hideDesktop"><a href="#about"><button class="mdl-button mdl-js-button mdl-js-ripple-effect"><i class="material-icons">menu</i></button></a></li>
+				<li class="hideMobile"><a href="#about"><button class="mdl-button mdl-js-button mdl-js-ripple-effect">Web Development</button></a></li>
+			  </ul>
 			  <ul class="nav navbar-nav navbar-right">
-				<li><a href="#about"><button class="mdl-button mdl-js-button mdl-js-ripple-effect">ABOUT</button></a></li>
-				<li><a href="#services"><button class="mdl-button mdl-js-button mdl-js-ripple-effect">SERVICES</button></a></li>
-				<li><a href="#portfolio"><button class="mdl-button mdl-js-button mdl-js-ripple-effect">PORTFOLIO</button></a></li>
-				<li><a href="#pricing"><button class="mdl-button mdl-js-button mdl-js-ripple-effect">PRICING</button></a></li>
-				<li><a href="#contact"><button class="mdl-button mdl-js-button mdl-js-ripple-effect">CONTACT</button></a></li>
+				<li><a href="#about"><button class="mdl-button mdl-js-button mdl-js-ripple-effect"><i class="material-icons">accessibility</i><span>ABOUT</span></button></a></li>
+				<li><a href="#services"><button class="mdl-button mdl-js-button mdl-js-ripple-effect"><i class="material-icons">widgets</i><span>SERVICES</span></button></a></li>
+				<li><a href="#portfolio"><button class="mdl-button mdl-js-button mdl-js-ripple-effect"><i class="material-icons">nfc</i><span>PORTFOLIO</span></button></a></li>
+				<li><a href="#pricing"><button class="mdl-button mdl-js-button mdl-js-ripple-effect"><i class="material-icons">spa</i><span>PRICING</span></button></a></li>
+				<li><a href="#contact"><button class="mdl-button mdl-js-button mdl-js-ripple-effect"><i class="material-icons">	mail_outline</i><span>CONTACT</span></button></a></li>
 			  </ul>
 			</div>
 		  </div>
 	  </nav>
+	  
+
 <!-- ============================================================================================================= -->
 	  
 	  <div class="mainBody">
-		<div class="leftPanel xs-12 col-sm-3 col-md-3 col-lg-2">
-		  <ul class="nav nav-pills nav-stacked">
-			<li class="active"><a href="#">Home</a></li>
-			<li><a href="#">Menu 1</a></li>
-			<li><a href="#">Menu 2</a></li>
-			<li><a href="#">Menu 3</a></li>
-		  </ul>
+		<div class="leftPanel connect_leftMenuMob col-sm-3 col-md-3 col-lg-2">
+		  <div class="profile">
+			<span class="mdl-chip mdl-chip--contact">
+				<span class="mdl-chip__contact mdl-color--teal mdl-color-text--white">T</span>
+				<span class="mdl-chip__text">Tushar Acharekar</span>
+			</span>
+		  </div>
+		  <nav id="myScrollspy">
+			  <ul class="nav nav-pills nav-stacked">
+				<li class="active"><a href="#section1"><button class="mdl-button mdl-js-button mdl-js-ripple-effect">Learn the Basics</button></a></li>
+				<li class=""><a href="#section2"><button class="mdl-button mdl-js-button mdl-js-ripple-effect">Research &amp; get Inspired</button></a></li>
+				<li class=""><a href="#section3"><button class="mdl-button mdl-js-button mdl-js-ripple-effect">Use Free Resources</button></a></li>
+				<li class=""><a href="#section4"><button class="mdl-button mdl-js-button mdl-js-ripple-effect">Improve Design Skills</button></a></li>
+				<li class=""><a href="#section6"><button class="mdl-button mdl-js-button mdl-js-ripple-effect">Use Friendly Text Editor</button></a></li>
+				<li class=""><a href="#section7"><button class="mdl-button mdl-js-button mdl-js-ripple-effect">Use frameworks</button></a></li>
+				<li class=""><a href="#section8"><button class="mdl-button mdl-js-button mdl-js-ripple-effect">Track Bugs</button></a></li>
+				<li class=""><a href="#section9"><button class="mdl-button mdl-js-button mdl-js-ripple-effect">Always Keep Learning</button></a></li>
+				<li class=""><a href="#section10"><button class="mdl-button mdl-js-button mdl-js-ripple-effect">Use Online Editor</button></a></li>
+				<li class=""><a href="#section11"><button class="mdl-button mdl-js-button mdl-js-ripple-effect">Explore Stack-Overflow</button></a></li>
+			  </ul>
+		  </nav>
 		</div>
 
-		<div class="rightPanel mainData col-sm-9 col-md-9 col-lg-10">
-			<h1>My First Bootstrap Page</h1>
+		<div class="rightPanel mainData col-sm-9 col-md-9 col-lg-10 col-sm-offset-3 col-md-offset-3 col-lg-offset-2">
+		<h1>Start Web Development</h1>
+		  <div id="section1">    
+			<h3>Learn the Basics</h3>
 			<p>This part is inside a .container-fluid class.</p>
 			<p>The .container-fluid class provides a full width container, spanning the entire width of the viewport.</p>
-			<h1>My First Bootstrap Page</h1>
+		  </div>
+		  <div id="section2"> 
+			<h3>Research & get Inspired</h3>
 			<p>This part is inside a .container-fluid class.</p>
 			<p>The .container-fluid class provides a full width container, spanning the entire width of the viewport.</p>
-			<h1>My First Bootstrap Page</h1>
+		  </div>        
+		  <div id="section3">         
+			<h3>Use Free Resources</h3>
 			<p>This part is inside a .container-fluid class.</p>
 			<p>The .container-fluid class provides a full width container, spanning the entire width of the viewport.</p>
-			<h1>My First Bootstrap Page</h1>
+		  </div>
+		  <div id="section4">         
+			<h3>Improve Design Skills</h3>
 			<p>This part is inside a .container-fluid class.</p>
 			<p>The .container-fluid class provides a full width container, spanning the entire width of the viewport.</p>
-			<h1>My First Bootstrap Page</h1>
+		  </div>      
+		  <div id="section5">         
+			<h3>Use Friendly Text Editor</h3>
 			<p>This part is inside a .container-fluid class.</p>
 			<p>The .container-fluid class provides a full width container, spanning the entire width of the viewport.</p>
-			<h1>My First Bootstrap Page</h1>
+		  </div>
+		  <div id="section6">         
+			<h3>Use frameworks</h3>
 			<p>This part is inside a .container-fluid class.</p>
 			<p>The .container-fluid class provides a full width container, spanning the entire width of the viewport.</p>
+		  </div>      
+		  <div id="section7">         
+			<h3>Track Bugs</h3>
+			<p>This part is inside a .container-fluid class.</p>
+			<p>The .container-fluid class provides a full width container, spanning the entire width of the viewport.</p>
+		  </div>			  
+		  <div id="section9">         
+			<h3>Always Keep Learning</h3>
+			<p>This part is inside a .container-fluid class.</p>
+			<p>The .container-fluid class provides a full width container, spanning the entire width of the viewport.</p>
+		  </div>      
+		  <div id="section10">         
+			<h3>Use Online Editor</h3>
+			<p>This part is inside a .container-fluid class.</p>
+			<p>The .container-fluid class provides a full width container, spanning the entire width of the viewport.</p>
+		  </div>
+		  <div id="section11">         
+			<h3>Explore Stack-Overflow</h3>
+			<p>This part is inside a .container-fluid class.</p>
+			<p>The .container-fluid class provides a full width container, spanning the entire width of the viewport.</p>
+		  </div>
 		</div>
 	  </div>
 </body>
