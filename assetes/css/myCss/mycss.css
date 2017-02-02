@@ -1,22 +1,9 @@
 
-@media only screen and (max-width : 767px){     
-	.connect_leftMenuMob{
-		left: -75%;
-		top:0px;
-		width:75%;
-	}
-	
-	.hideMobile{display:none !important;}
-}
+body{background-color:#CFD8DC;}
 
+body *,body{font-family: "Varela Round", "Roboto","Helvetica","Arial",sans-serif;}
 
-html { overflow-y: scroll; }
-
-body{background-color:#CFD8DC;position: relative; }
-
-body *,body{font-family: 'Varela Round', sans-serif;}
-
-.container-fluid{margin:0px;padding:0px;}
+h1,h2,h3,h4,h5,h6{ padding:0px; margin:0px;}
 
 .mainBody{background-color:gray;}
 
@@ -26,27 +13,22 @@ a{padding: 0px !important;}
 
 .material-icons{font-size:18px;}
 
-.menuToggle .hideMobile{
-width:100%;	
+.dataBlock{padding:0px 15px;}
+
+ .mdl-layout__content{padding:0px;} 
+ 
+.mdl-layout__drawer{
+background-color: #9FA8DA;
+border:0px solid black;
+}
+/* =====================================================Angular Material========================================================================== */
+
+.amSearch{
+padding:10px;
+align-self: flex-end;
 }
 
-.menuToggle{
-padding-right: 0px;
-}
-
-.profile{
-padding:15px;
-margin:0px auto;
-display:flex;
-justify-content:flex-start;
-}
-
-.connect_leftMenuMob{
-	position: fixed !important;
-	min-height:100vh;
-	height:auto;
-	z-index:10000 !important;
-}
+/* ================================================================================================================================================ */
 
 
 
@@ -58,7 +40,8 @@ background-color:#455A64;
 }
 
 .rightPanel{
-background-color:#E0E0E0;
+padding:15px 0px 0px 0px;
+background-color:#C5CAE9;
 }
 
 .leftPanel li a{
@@ -72,12 +55,43 @@ background-color:#9E9E9E;
 
 /* ================================================================================================================================================ */
 
+@media only screen and (min-width : 769px){     
+  	.mdl-layout__drawer-button{
+	  display:none;
+	}
+	
+	.mdl-layout__header{
+		margin-left: 0px !important;
+		width: 100% !important;
+	}
+	
+	.mdl-layout__content{
+		margin-left: 20% !important;
+	}
+	
+	.mdl-layout__drawer{
+		z-index: 2;
+		top:7%;
+		width:20%;
+	}
 
+	.mdl-layout{
+		overflow-y: hidden !important;
+	}	
+}
+
+
+@media screen and (min-width: 769px){
+	.mdl-layout--fixed-drawer>.mdl-layout__drawer {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+}
 
 
 
 /* =====================================================overide bootsrap========================================================================== */
-.navbar-default{
+/* .navbar-default{
 background-color:#37474F;
 border-width: 0px;
 }
@@ -106,7 +120,7 @@ border-width: 0px;
 .navbar-fixed-top #myNavbar .navbar-right{
 float: right;
 }
-
+ */
 
 
 /* ================================================================================================================================================ */
@@ -116,7 +130,7 @@ float: right;
 
 
 /* ================================================overide material design======================================================================== */
-.mdl-button{
+/* .mdl-button{
     color: #EEEEEE;
     padding: 0px 15px;
     height: 50px;
@@ -129,21 +143,6 @@ float: right;
 .mdl-button i{
 padding-bottom:5px;
 }
-
+ */
 /* ================================================================================================================================================ */
 
-
-
-
-@media only screen and (min-width : 768px){     
-	.leftPanel{
-		height:100%;
-		min-height:100vh;
-	}
-	
-	#myNavbar .navbar-right span{
-		display:inline-block;
-	}
-	
-	.hideDesktop{display:none !important;}
-}
