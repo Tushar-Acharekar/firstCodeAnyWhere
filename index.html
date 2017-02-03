@@ -57,10 +57,8 @@
 
 </head>
 <body>
- <platinum-sw-register skip-waiting clients-claim auto-register reload-on-install>
-  <platinum-sw-import-script href="custom-fetch-handler.js"></platinum-sw-import-script>
-  <platinum-sw-fetch handler="customFetchHandler" path="/(.*)/customFetch"></platinum-sw-fetch>
-  <platinum-sw-cache default-cache-strategy="fastest"></platinum-sw-cache>
+<platinum-sw-register auto-register>
+  <platinum-sw-cache></platinum-sw-cache>
 </platinum-sw-register>
 <!-- ===========================================================Top navigation====================================================== -->
   
