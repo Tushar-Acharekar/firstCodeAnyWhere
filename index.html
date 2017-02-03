@@ -47,10 +47,24 @@
 	<link rel="import" href="lib/paper-input/paper-input-container.html">
 	<link rel="import" href="lib/paper-input/paper-input-error.html">
 	<link rel="import" href="lib/paper-input/paper-textarea.html">
+	
+		<link rel="import" href="lib/platinum-sw-cache.html">
+	<link rel="import" href="lib/platinum-sw-fetch.html">
+	<link rel="import" href="lib/platinum-sw-import-script.html">
+	<link rel="import" href="lib/platinum-sw-offline-analytics.html">
+	<link rel="import" href="lib/platinum-sw-register.html">
   
 
 </head>
 <body>
+	
+	
+<platinum-sw-register skip-waiting
+                      clients-claim
+                      auto-register
+                      reload-on-install>
+  <platinum-sw-cache default-cache-strategy="fastest"></platinum-sw-cache>
+</platinum-sw-register>
 <!-- ===========================================================Top navigation====================================================== -->
   
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
