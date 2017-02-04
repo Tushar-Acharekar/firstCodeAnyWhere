@@ -9,23 +9,43 @@ h1,h2,h3,h4,h5,h6{ padding:0px; margin:0px;}
 
 li>a{padding: 0px !important;}
 
-a{padding: 0px !important;}
+a{padding: 0px !important; text-decoration: none !important;}
 
-.material-icons{font-size:18px;}
+.material-icons{font-size:18px; color:white !important;}
 
 .dataBlock{padding:0px 15px;}
 
- .mdl-layout__content{padding:0px;} 
+.mdl-layout{overflow-y: hidden !important;height:auto;}	
+
+.mdl-layout__content{padding:0px;z-index: 1;} 
  
-.mdl-layout__drawer{
-background-color: #9FA8DA;
-border:0px solid black;
+.mdl-layout__drawer{background-color: #7986CB;border:0px solid black;padding: 15px 10px;}
+
+.mdl-grid, .mdl-cell{
+margin:0px;
+
 }
+
+.card{display:flex;justify-content: center;padding-bottom:25px;}
+
+.mdl-chip__text a{color:#9E9E9E;}
+.mdl-chip__text a:hover{color:#607d8b;}
+
+
+.btnLeft{background-color:#5C6BC0;}
+.btnLeft:hover{background-color:#3F51B5;}
+
+.orgName{
+display: none;
+align-self: center;
+font-size:25px;
+}
+
+
 /* =====================================================Angular Material========================================================================== */
 
 .amSearch{
 padding:10px;
-align-self: flex-end;
 }
 
 /* ================================================================================================================================================ */
@@ -40,8 +60,8 @@ background-color:#455A64;
 }
 
 .rightPanel{
-padding:15px 0px 0px 0px;
-background-color:#C5CAE9;
+padding:15px 0px;
+background-color:#E0E0E0;
 }
 
 .leftPanel li a{
@@ -71,13 +91,13 @@ background-color:#9E9E9E;
 	
 	.mdl-layout__drawer{
 		z-index: 2;
-		top:7%;
+		margin-top: 5em;
 		width:20%;
 	}
 
-	.mdl-layout{
-		overflow-y: hidden !important;
-	}	
+	.orgName{
+	display: flex;
+	}
 }
 
 
@@ -146,3 +166,15 @@ padding-bottom:5px;
  */
 /* ================================================================================================================================================ */
 
+
+/* ================================================material design css======================================================================== */
+
+.demo-card-square.mdl-card {
+  width: 320px;
+  height: 320px;
+}
+.demo-card-square > .mdl-card__title {
+  color: #fff;	
+  background:bottom right 15% no-repeat #46B6AC;
+}
+/* ================================================================================================================================================ */
